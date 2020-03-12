@@ -53,7 +53,6 @@ h3{
     font-size: 1.2em;
 }
 h6{
-    font-family: minion;
     grid-area: h6;
     margin: 0;
     font-weight: 400;
@@ -62,7 +61,7 @@ h6{
 }
 button{
     grid-area: button;
-    width: 160px;
+    width: 50%;
     background: #27aae2;
     color: white;
     padding: 0;
