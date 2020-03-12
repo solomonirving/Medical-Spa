@@ -1,3 +1,12 @@
+@font-face {
+    font-family:"minion pro";
+    src: url("Minion\ Pro\ Regular.ttf");
+}
+@font-face{
+    font-family:"arial narrow";
+    src: url("Arial\ Narrow.ttf")
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -39,6 +48,8 @@ body{
     height: 40px;
 }
 h1{ 
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     grid-area: h1;
     margin: 0;
     line-height: 45px;
@@ -46,6 +57,7 @@ h1{
 }
 
 h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     grid-area: h3;
     margin: 0;
     font-weight: 400;
@@ -60,12 +72,17 @@ h6{
     font-size: .8em;
 }
 button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     grid-area: button;
+    font-size: .9em;
     width: 50%;
     background: #27aae2;
     color: white;
     padding: 0;
     height: 4vh;
+}
+.fa-arrow-down{
+    padding: 0 2% 0 0;
 }
 .doctor{
     grid-area: doctor;
