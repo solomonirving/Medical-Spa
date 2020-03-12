@@ -1,0 +1,163 @@
+body{
+    padding: 0;
+    margin: 0;
+    border:0;
+    font-family: "roboto", sans-serif;
+}
+.header{ 
+    grid-area: header;
+    background: #90c141;
+    height: 10vh;
+}
+.logo-text{
+    color: #656363;
+    font-size: .7em;
+    position: absolute;
+    top: 20px;
+    left: 20%;
+}
+.main{
+    padding: .5% 0 0 10%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "h1 doctor"
+    "h3 doctor"
+    "h6 doctor"
+    "button doctor"
+    "logos doctor";
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.logos{
+    grid-area: logos;
+}
+.items{
+    height: 40px;
+}
+h1{ 
+    grid-area: h1;
+    margin: 0;
+    line-height: 45px;
+    font-size: 3em;
+}
+
+h3{
+    grid-area: h3;
+    margin: 0;
+    font-weight: 400;
+    width: 60%;
+    font-size: 1.2em;
+}
+h6{
+    font-family: minion;
+    grid-area: h6;
+    margin: 0;
+    font-weight: 400;
+    width: 60%;
+    font-size: .8em;
+}
+button{
+    grid-area: button;
+    width: 160px;
+    background: #27aae2;
+    color: white;
+    padding: 0;
+    height: 4vh;
+}
+.doctor{
+    grid-area: doctor;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    justify-self: center;
+}
+.footer{
+    height: 10vh;
+    display: grid;
+    background: #90c141;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.book, .dermal, .laser, .sculpting{
+    color: white;
+    font-size: .7em;
+}
+.copyright{
+    grid-area: copyright;
+    font-size: .6rem;
+}
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    padding: 0 10% 1% 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-bottom{
+    bottom: 5px;
+    padding: 0 5% .5% 10%;
+    position: absolute;
+}
+
+@media screen and (max-width: 740px) {
+    .main{
+        padding: 1% 1% 1% 0;
+        position: relative;
+        overflow: hidden;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "h1"
+        "h3"
+        "doctor"
+        "h6"
+        "button"
+        "logos";
+        justify-items: center;
+        height: 100%;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 2.5em;
+        padding: 5% 0 0 0;
+    }
+    h3{
+        text-align: center;
+        width: 70%;
+        padding: 5% 0 5% 0;
+    }
+    .picture{
+        display: flex;
+        height: 400px;
+        width: 400px;
+        justify-content: center;
+    }
+    h6{
+        text-align: center;
+        width: 50%;
+        margin: 5% 0 0 0;
+    }
+    button{
+        text-align: center;
+        align-content: center;
+        margin: 5% 0 5% 0;
+    }
+    .footer{
+        text-align: center;
+    }
+    .book, .dermal, .laser, .sculpting{
+        font-size: .5em;
+    }
+    .copyright{
+        font-size: .5rem;
+    }
+}
